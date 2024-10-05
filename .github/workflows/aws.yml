@@ -23,7 +23,6 @@
 # 4. Store an IAM user access key in GitHub Actions secrets named `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY`.
 #    See the documentation for each action used below for the recommended IAM policies for this IAM user,
 #    and best practices on handling the access key credentials.
-
 on:
   push:
     branches:
@@ -61,7 +60,7 @@ jobs:
       with:
         aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        aws-region: <YOUR_AWS_REGION>
+        aws-region: ap-southeast-2
 
     - name: Login to Amazon ECR
       id: login-ecr
