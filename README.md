@@ -1,15 +1,5 @@
 ## CI/CD Pipeline Steps
 
-```mermaid
-graph TD
-    A[Start] --> B[Source Code Commit (AWS CodeCommit / GitHub / Bitbucket)]
-    B --> C[CodeBuild (Build Docker Image)]
-    C --> D[Amazon ECR (Image Repository)]
-    D --> E[CodeDeploy (Deploy to ECS)]
-    E --> F[Amazon ECS (Running the Application)]
-    F --> G[End]
-```
-
 ### Detailed Steps
 
 1. **Source Code Commit**  
