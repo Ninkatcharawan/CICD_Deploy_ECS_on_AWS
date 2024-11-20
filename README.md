@@ -39,5 +39,3 @@
    git push origin main
    ```
 4. **Verify on GitHub**: Open your repository on GitHub to ensure the updated steps are displayed correctly.
-
-Let me know if you need further assistance!
